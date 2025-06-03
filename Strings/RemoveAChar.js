@@ -16,3 +16,10 @@ function substring(){
     console.log(newStr1);
 }
 substring();
+
+function slice(){
+    let str = "Dominican Republic is a beautiful country";
+    let result = str.slice(0, 10) + str.slice(19)   
+    console.log(result); //removes the characters from index 10 to 17
+}
+slice();
