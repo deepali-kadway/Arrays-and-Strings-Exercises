@@ -23,3 +23,11 @@ function slice(){
     console.log(result); //removes the characters from index 10 to 17
 }
 slice();
+
+function slicewithIndex(){
+    let s1 = "Sustainable Development in JavaScript";
+    let start = s1.indexOf(" in");
+    let s2 = s1.slice(0, start) + s1.slice(start + " in".length);
+    console.log(s2);
+}
+slicewithIndex();
