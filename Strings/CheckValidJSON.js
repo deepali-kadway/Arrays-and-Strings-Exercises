@@ -2,7 +2,7 @@ function checkValidJSON(str){
     if((str.startsWith('{') && str.endsWith('}')) ||
        (str.startsWith('[') && str.endsWith(']'))) {
       try{
-        const parsedStr = JSON.parse(str)
+        const parsedStr = JSON.parse(str)           //converts the JSON string into a JavaScript object
         if (typeof parsedStr === 'object' && parsedStr !== null) {
                 return true;
             }
